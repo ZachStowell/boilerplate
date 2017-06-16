@@ -6,7 +6,7 @@
     "scripts": {
         "watch": "npm-run-all --parallel watch:*",
         "watch:css": "node-sass -w ./source/scss/styles.scss ./public/assets/stylesheets/styles.css",
-        "postwatch:css": "postcss -c ./postcss.json",
+        "postcss": "postcss -c ./postcss.json",
         "watch:lint": "esw -w ./source/javascript/*.js",
         "watch:webpack": "webpack --watch",
         "prerelease": "cp -r ./public ./dist",
